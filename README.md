@@ -1,5 +1,5 @@
 ## Contents:
-1. Problem Statement
+1. [Problem Statement](https://s-nithish-kumar.github.io/Anomalous_human_activity_detection_using_stick_figure_and_deep_learning_model/#1-problem-statemet)
 2. Objectives
 3. Pose Estimation Model
 4. Process Flow
@@ -25,6 +25,10 @@
 + BlazePose is one such model in MediaPipe for human pose estimation, specifically designed for applications like exercise, yoga, etc.
 + BlazePose outputs 33 key points along with two virtual key points (one at the human body center and another at the circumference of the circle).
 + The picture below shows the key points corresponding to the body parts.
+<p align="center">
+<img src="images/pose_landmarks" height="110%" width="110%">
+</p>
+<p align="center">Figure 1 Pose landmarks of the BlazePose model</p>
 
 
 ### 4. Process Flow:
