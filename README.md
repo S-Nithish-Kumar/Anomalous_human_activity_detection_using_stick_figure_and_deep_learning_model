@@ -1,17 +1,17 @@
 ## Contents:
-1. [Problem Statement](https://s-nithish-kumar.github.io/Anomalous_human_activity_detection_using_stick_figure_and_deep_learning_model/#1-problem-statemet)
-2. Objectives
-3. Pose Estimation Model
-4. Process Flow
-5. Data Collection
-6. Data Visualization and Preprocessing
-7. Model Training and Results
-8. Output
-9. Problems and Troubleshooting
-10. Conclusion
-11. References
+1. [Problem Statement](https://s-nithish-kumar.github.io/Anomalous_human_activity_detection_using_stick_figure_and_deep_learning_model/#1-problem-statement)
+2. [Objectives](https://s-nithish-kumar.github.io/Anomalous_human_activity_detection_using_stick_figure_and_deep_learning_model/#2-objectives)
+3. [Pose Estimation Model](https://s-nithish-kumar.github.io/Anomalous_human_activity_detection_using_stick_figure_and_deep_learning_model/#3-pose-estimation-model)
+4. [Process Flow](https://s-nithish-kumar.github.io/Anomalous_human_activity_detection_using_stick_figure_and_deep_learning_model/#4-process-flow)
+5. [Data Collection](https://s-nithish-kumar.github.io/Anomalous_human_activity_detection_using_stick_figure_and_deep_learning_model/#5-data-collection)
+6. [Data Visualization and Preprocessing](https://s-nithish-kumar.github.io/Anomalous_human_activity_detection_using_stick_figure_and_deep_learning_model/#6-data-visualization-and-preprocessing)
+7. [Model Training and Results](https://s-nithish-kumar.github.io/Anomalous_human_activity_detection_using_stick_figure_and_deep_learning_model/#7-model-training-and-results)
+8. [Output](https://s-nithish-kumar.github.io/Anomalous_human_activity_detection_using_stick_figure_and_deep_learning_model/#8-output)
+9. [Problems and Troubleshooting](https://s-nithish-kumar.github.io/Anomalous_human_activity_detection_using_stick_figure_and_deep_learning_model/#9-problems-and-troubleshooting)
+10. [Conclusion](https://s-nithish-kumar.github.io/Anomalous_human_activity_detection_using_stick_figure_and_deep_learning_model/#10-conclusion)
+11. [References](https://s-nithish-kumar.github.io/Anomalous_human_activity_detection_using_stick_figure_and_deep_learning_model/#11-references)
 
-### 1. Problem Statemet:
+### 1. Problem Statement:
 - Advanced security measures at airport borders and prisons are crucial due to the persistent threat posed by potential intruders.
 + It will be very helpful for supervisors and security guards if some intelligent system helps them with surveillance.
 
@@ -26,7 +26,7 @@
 + BlazePose outputs 33 key points along with two virtual key points (one at the human body center and another at the circumference of the circle).
 + The picture below shows the key points corresponding to the body parts.
 <p align="center">
-<img src="images/pose_landmarks" height="110%" width="110%">
+<img src="images/pose_landmarks.jpg" height="110%" width="110%">
 </p>
 <p align="center">Figure 1 Pose landmarks of the BlazePose model</p>
 
