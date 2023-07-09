@@ -1,0 +1,1 @@
+# Anomalous_human_activity_detection_using_stick_figure_and_deep_learning_model
