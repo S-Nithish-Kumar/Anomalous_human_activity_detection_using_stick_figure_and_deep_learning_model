@@ -6,7 +6,7 @@
     text-justify: inter-word;
   }
   a:link {
-    color: green;
+    color: #232ab1;
     background-color: transparent;
     text-decoration: none;
   }
@@ -86,7 +86,7 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1 class="header" align="left">{{ site.title | default: site.github.repository_name }}</h1>
+        <h2 class="header" align="left">{{ site.title | default: site.github.repository_name }}</h2>
         <p class="header" align="left">{{ site.description | default: site.github.project_tagline }}</p>
 
         <ul>
@@ -117,10 +117,6 @@
         {{ content }}
         </div>
       </section>
-
-      <footer>
-        <p align="left"><small>ASU student project done in collaboration with the Barrow Neurological Institute</small></p>
-      </footer>
       
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
