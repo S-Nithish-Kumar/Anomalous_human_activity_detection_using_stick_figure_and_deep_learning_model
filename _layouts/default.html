@@ -64,8 +64,8 @@
     transform-origin: 0 0;
   }
 
-  .zoom_left_bar{
-    zoom: 1.1;
+  .zoom_title{
+    zoom: 0.8;
     transform-origin: 0 0;
   }
     
@@ -86,7 +86,7 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1 class="header" align="left">{{ site.title | default: site.github.repository_name }}</h1>
+        <h1 class="header zoom_title" align="left">{{ site.title | default: site.github.repository_name }}</h1>
         <p class="header" align="left">{{ site.description | default: site.github.project_tagline }}</p>
 
         <ul>
