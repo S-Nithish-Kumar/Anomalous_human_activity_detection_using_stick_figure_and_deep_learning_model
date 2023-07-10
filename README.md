@@ -26,7 +26,7 @@
 + BlazePose outputs 33 key points along with two virtual key points (one at the human body center and another at the circumference of the circle).
 + The picture below shows the key points corresponding to the body parts.
 <p align="center">
-<img src="images/pose_landmarks.jpg" height="110%" width="110%">
+<img src="images/pose_landmarks.jpg" height="90%" width="90%">
 </p>
 <p align="center">Figure 1 Pose landmarks of the BlazePose model</p>
 
@@ -37,7 +37,7 @@
 - The output pose, thus obtained, is sent to a microcontroller, which is programmed to turn on LEDs and a buzzer when the pose is anomalous.
 
 <p align="center">
-<img src="images/block_diagram_overall_working.png" height="110%" width="110%">
+<img src="images/block_diagram_overall_working.png" height="90%" width="90%">
 </p>
 <p align="center">Figure 2 Block diagram - Overall working</p>
 
@@ -46,7 +46,7 @@
 - After the pose is found, it will be displayed on the monitor, and a signal will be sent to the Arduino microcontroller. Upon detection of anomalous activity, the buzzer connected to the controller will turn on.
 
 <p align="center">
-<img src="images/sequence_flow_diagram.png" height="110%" width="110%">
+<img src="images/sequence_flow_diagram.png" height="100%" width="100%">
 </p>
 <p align="center">Figure 3 Sequence flow diagram</p>
 
@@ -65,7 +65,7 @@ Key points from the BlazePose model are stored in a .csv file. Key points are co
 - The graph projecting the accuracy of the model for each epoch is shown in Figure 4. The accuracy of both the training and test datasets is almost similar since there is not much difference between the data points.
 
 <p align="center">
-<img src="images/model_training_accuracy.png" height="110%" width="110%">
+<img src="images/model_training_accuracy.png" height="80%" width="80%">
 </p>
 <p align="center">Figure 4 Model training and test dataset accuracy</p>
 
@@ -73,7 +73,7 @@ Key points from the BlazePose model are stored in a .csv file. Key points are co
 The model has been tested with real-time inputs. Figure 5 shows the output of the model for different poses. The output from the model is sent to the Arduino microcontroller, which turns on three LEDs sequentially with a delay of 1 second after the anomalous activity is detected. Even after 3 seconds, if anomalous activity is detected, the fourth LED glows (shown in Figure 5), which confirms the anomalous activity. Instead of the fourth LED, a buzzer could be replaced.
 
 <p align="center">
-<img src="images/output_and_arduino_implementation.png" height="110%" width="110%">
+<img src="images/output_and_arduino_implementation.png" height="80%" width="80%">
 </p>
 <p align="center">Figure 5 Output of the ANN model and implementation using Arduino microcontroller</p>
 
