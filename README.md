@@ -60,7 +60,7 @@ Key points from the BlazePose model are stored in a .csv file. Key points are co
 - Scatter plots are used to plot the key points of all the poses to visualize how well the poses are differentiated from each other.
 - More information on data visualization and preprocessing is available in the conference paper.
 
-### 7. Model Traning and Results:
+### 7. Model Training and Results:
 - After data preprocessing, a three-layer deep learning ANN model is trained. The training accuracy is 94.63%, and the test data accuracy is 94.51%.
 - The graph projecting the accuracy of the model for each epoch is shown in Figure 4. The accuracy of both the training and test datasets is almost similar since there is not much difference between the data points.
 
