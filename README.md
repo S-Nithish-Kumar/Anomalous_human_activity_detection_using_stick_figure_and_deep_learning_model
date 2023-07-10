@@ -35,9 +35,20 @@
 - Figure 2 shows the block diagram of the overall working of the project. The input image is taken from the integrated webcam of the laptop and has a size of 640 by 480 pixels.
 - The image is given to the BlazePose model to obtain the key points of the human body present in the image. The key points are then fed into the trained ANN model, which outputs the pose (one of the four classes—normal, climb, crawl, squat).
 - The output pose, thus obtained, is sent to a microcontroller, which is programmed to turn on LEDs and a buzzer when the pose is anomalous.
+
+<p align="center">
+<img src="images/block_diagram_overall_working.png" height="110%" width="110%">
+</p>
+<p align="center">Figure 2 Block diagram - Overall working</p>
+
 - Figure 3 shows the sequence flow diagram of the process. In Step 1, the input is obtained from the integrated web of the laptop and passed to the BlazePose model to check the detection confidence.
 - If detection confidence is above the threshold, landmarks (key points) will be returned by the BlazePose model. The key points are sent to a deep Learning model to identify the pose.
 - After the pose is found, it will be displayed on the monitor, and a signal will be sent to the Arduino microcontroller. Upon detection of anomalous activity, the buzzer connected to the controller will turn on.
+
+<p align="center">
+<img src="images/sequence_flow_diagram.png" height="110%" width="110%">
+</p>
+<p align="center">Figure 3 Sequence flow diagram</p>
 
 ### 5. Data Collection:
 Key points from the BlazePose model are stored in a .csv file. Key points are collected for a total of four poses. Normal with labels as ‘n’; climb, squat, crawl with ‘c’, ‘q’, and "r, respectively, as labels. More details on data collection are available in the conference paper.
@@ -53,8 +64,18 @@ Key points from the BlazePose model are stored in a .csv file. Key points are co
 - After data preprocessing, a three-layer deep learning ANN model is trained. The training accuracy is 94.63%, and the test data accuracy is 94.51%.
 - The graph projecting the accuracy of the model for each epoch is shown in Figure 4. The accuracy of both the training and test datasets is almost similar since there is not much difference between the data points.
 
+<p align="center">
+<img src="images/model_training_accuracy.png" height="110%" width="110%">
+</p>
+<p align="center">Figure 4 Model training and test dataset accuracy</p>
+
 ### 8. Output:
 The model has been tested with real-time inputs. Figure 5 shows the output of the model for different poses. The output from the model is sent to the Arduino microcontroller, which turns on three LEDs sequentially with a delay of 1 second after the anomalous activity is detected. Even after 3 seconds, if anomalous activity is detected, the fourth LED glows (shown in Figure 5), which confirms the anomalous activity. Instead of the fourth LED, a buzzer could be replaced.
+
+<p align="center">
+<img src="images/output_and_arduino_implementation.png" height="110%" width="110%">
+</p>
+<p align="center">Figure 5 Output of the ANN model and implementation using Arduino microcontroller</p>
 
 ### 9. Problems and Troubleshooting:
 - The trained ANN model has limitations in terms of detection distance and camera position. The model performs well till a distance of 15 feet from the camera.
